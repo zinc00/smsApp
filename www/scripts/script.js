@@ -5,7 +5,7 @@
 (function(){
 
     var smsAppModule = angular.module('smsApp', [])
-        .controller('MainController', ['$scope', function($scope){
+        .controller('MainController', ['$scope','cordova', function($scope, cordova){
             var fileHandler = function(){
                 $scope.tmp = "tmp";
                 console.log($scope.tmp)
@@ -13,7 +13,7 @@
             fileHandler();
         }]);
 
-     var smsplugin = cordova.require("info.asankan.phonegap.smsplugin.smsplugin");
+        var smsplugin = cordova.require("info.asankan.phonegap.smsplugin.smsplugin");
 
 })();
 
