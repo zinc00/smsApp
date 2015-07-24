@@ -1,6 +1,7 @@
 /**
  * Created by avi on 11/06/2015.
  */
+
 (function(){
 
     var smsAppModule = angular.module('smsApp', [])
@@ -11,6 +12,8 @@
             };
             fileHandler();
         }]);
+
+     var smsplugin = cordova.require("info.asankan.phonegap.smsplugin.smsplugin");
 
 })();
 
